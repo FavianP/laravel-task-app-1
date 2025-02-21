@@ -14,13 +14,13 @@ class="w-full border rounded px-3 py-2">
 <div class="mb-4">
 <label for="task_location" class="block mb-1">Location (Optional)</label>
 <input type="text" name="task_location" id="task_location"
-class="w-full border rounded px-3 py-2">
+class="w-80 border rounded px-3 py-2">
 
 </div>
 <div class="mb-4">
 <label for="time_complexity" class="block mb-1">Time Estimate</label>
 <select name="time_complexity" id="time_complexity" required
-class="w-full border rounded px-3 py-2">
+class="w-30 border rounded px-3 py-2">
 <option value="1">~10 minutes</option>
 <option value="2">~30 minutes</option>
 <option value="3">~1 hour</option>
@@ -38,12 +38,12 @@ placeholder="e.g., Trash Bags, Broom">
 <div class="mb-4">
 <label for="deadline" class="block mb-1">Deadline (Optional)</label>
 <input type="datetime-local" name="deadline" id="deadline"
-class="w-full border rounded px-3 py-2">
+class="w-42 border rounded px-3 py-2">
 
 </div>
 <div class="mb-4">
 <label for="priority" class="block mb-1">Priority (Optional)</label>
-<select name="priority" id="priority" class="w-full border rounded px-3 py-2">
+<select name="priority" id="priority" class="w-30 border rounded px-3 py-2">
 <option value="">Select Priority</option>
 <option value="1">Low</option>
 <option value="2">Medium</option>
@@ -59,11 +59,11 @@ placeholder="e.g., chores, work, health">
 </div>
 <div class="flex gap-4">
 <button type="submit"
-class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+class="bg-black text-white px-4 py-2 rounded hover:bg-gray-500">
 Create Task
 </button>
 <a href="{{ url('/') }}"
-class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">
+class="bg-red-500 text-black px-4 py-2 rounded hover:bg-gray-500">
 Cancel
 </a>
 </div>
