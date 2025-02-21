@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="max-w-2xl mx-auto p-4">
 <h1 class="text-2xl font-bold mb-4">All Tasks</h1>
 {{-- search and sort form --}}
-<form action="{{ route('tasks.index') }}" method="GET" class="mb-4">
+<https://docs.google.com/document/d/1jZU5dfM3PS6DddQ8ixdQRh9VqiFV7YuBH1jdICPdFww/edit?usp=sharingform action="{{ route('tasks.index') }}" method="GET" class="mb-4">
 <input
 type="text"
 name="search"
@@ -22,7 +23,7 @@ Deadline
 Category
 </option>
 </select>
-<button type="submit" class="bg-blue-500 text-white px-4 py-2 ml-2 rounded hover:bg-blue-600">
+<button type="submit" class="bg-black text-white px-4 py-2 ml-2 rounded hover:bg-gray-500">
 Search & Sort
 </button>
 </form>
@@ -30,7 +31,7 @@ Search & Sort
 @forelse($tasks as $task)
 <li class="mb-2">
 {{ $task->task_name }}
-<a href="{{ route('tasks.show', $task->id) }}" class="text-blue-500 underline ml-2">
+<a href="{{ route('tasks.show', $task->id) }}" class="text-blue-600 underline ml-2">
 View
 </a>
 </li>
@@ -40,7 +41,7 @@ View
 </ul>
 <div class="mt-4">
 <a href="{{ route('tasks.create') }}"
-class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+class="bg-black text-white px-4 py-2 rounded hover:bg-gray-500">
 Create a New Task
 </a>
 </div>
